@@ -16,11 +16,11 @@ export class TaskService {
   }
 
   findAll() {
-    return this.TasksRepo.find({ relations: ['tasks'] });
+    return this.TasksRepo.find();
   }
 
   findOne(id: number) {
-    return this.TasksRepo.findOne({ where: { id }, relations: ['tasks'] });
+    return this.TasksRepo.findOne({ where: { id }});
   }
 
   async update(id: number, updateData: Partial<Task>) {

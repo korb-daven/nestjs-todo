@@ -10,7 +10,7 @@ import {
 import { TaskService } from './task.service';
 // import { createTaskDto } from './dto/create-task.dto';
 
-@Controller('Tasks')
+@Controller('tasks')
 export class TasksController {
   constructor(private readonly TaskService: TaskService) {}
 

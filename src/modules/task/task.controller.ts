@@ -31,7 +31,7 @@ export class TasksController {
     return this.TaskService.create(body);
   }
 
-  @Patch('/:id')
+  @Patch(':id')
   updateTask(
     @Param('id') id: number,
     @Body() body: { name: string; description: string; },
@@ -39,7 +39,7 @@ export class TasksController {
     return this.TaskService.update(id, body);
   }
 
-  @Delete('/Tasks/:id')
+  @Delete(':id')
   deleteTask(@Param('id') id: number) {
     return this.TaskService.remove(id);
   }

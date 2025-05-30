@@ -15,6 +15,6 @@ export class User {
   @Column()
   password: string;
 
-  @OneToMany(() => Task, task => task.user)
-  tasks: Task[];
+  // @OneToMany(() => Task, task => task.user)
+  // tasks: Task[];
 }

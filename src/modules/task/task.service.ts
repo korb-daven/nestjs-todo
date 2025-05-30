@@ -16,7 +16,7 @@ export class TaskService {
   }
 
   findAll() {
-    return this.TasksRepo.find();
+    return this.TasksRepo.find(); // { relations: ['user'] }
   }
 
   findOne(id: number) {
